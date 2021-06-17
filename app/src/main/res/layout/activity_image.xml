@@ -1,57 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CameraActivity">
+    tools:context=".ImageActivity">
 
     <ImageView
-        android:id="@+id/image_view"
+        android:id="@+id/image_view3"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_alignParentStart="true"
 
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="10dp" />
+        />
 
     <TextView
-        android:id="@+id/text_display"
+        android:id="@+id/text_display3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/image_view"
+        android:layout_below="@id/image_view3"
         android:layout_margin="10dp"
         android:maxLines="6"
         android:text="Display Detected Text"
         android:textSize="26dp"
 
-        />
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="419dp" />
 
     <Button
-        android:id="@+id/capture_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/detected_button"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="#FF0000"
-        android:text="Capture Image"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="17dp"
-        android:layout_marginVertical="10dp"
-        />
-
-    <Button
-        android:id="@+id/detected_button"
+        android:id="@+id/translate_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/design_default_color_on_primary"
         android:backgroundTint="@color/teal_200"
-        android:text="Detected Text"
+        android:text="Translate Text"
         android:textAllCaps="false"
         android:textColor="@color/white"
 
-        android:textSize="17dp" />
-
-</RelativeLayout>
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="635dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

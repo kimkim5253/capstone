@@ -7,17 +7,42 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/TranslateText"
+        android:id="@+id/InputText"
         android:layout_width="395dp"
         android:layout_height="250dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="TextView"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/TranslateText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         />
+
+    <EditText
+        android:id="@+id/Inputtext"
+        android:layout_width="395dp"
+        android:layout_height="250dp"
+        android:text="번역할 내용을 적으시오."
+        app:layout_constraintBottom_toBottomOf="@+id/InputText"
+        app:layout_constraintEnd_toEndOf="@+id/InputText"
+        app:layout_constraintStart_toStartOf="@+id/InputText"
+        app:layout_constraintTop_toTopOf="@+id/InputText" />
+
+    <TextView
+        android:id="@+id/TranslateText"
+        android:layout_width="395dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/TranslateButton"
@@ -27,7 +52,7 @@
         android:layout_marginEnd="10dp"
         android:text="Translate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TranslateText"
+        app:layout_constraintTop_toBottomOf="@+id/InputText"
         />
 
     <Button
@@ -51,4 +76,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
